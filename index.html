@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blais Mobile Welding | On-Site Welding & Repair | Kapuskasing & Timmins</title>
+    <meta name="description" content="Fast, reliable mobile welding and metal fabrication across Kapuskasing, Timmins, and Northern Ontario. Heavy equipment repair, structural welding, and emergency service.">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            bg: '#111113',
+                            surface: '#1E2025',
+                            cardBg: '#181A1F',
+                            border: '#2A2D35',
+                            orange: '#FF6B00',
+                            orangeHover: '#E05E00',
+                            text: '#E2E8F0',
+                            muted: '#94A3B8'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                        heading: ['Oswald', 'Impact', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts for Industrial Headings -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #111113;
+            color: #E2E8F0;
+            font-family: 'Inter', sans-serif;
+        }
+        h1, h2, h3, .font-heading {
+            font-family: 'Oswald', sans-serif;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+        }
+        .orange-glow:hover {
+            box-shadow: 0 0 25px rgba(255, 107, 0, 0.35);
+        }
+        .orange-border-glow:hover {
+            border-color: #FF6B00;
+            box-shadow: 0 0 15px rgba(255, 107, 0, 0.2);
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-brand-orange selection:text-white">
+
+    <!-- 1. HEADER / NAVBAR -->
+    <header class="sticky top-0 z-50 bg-[#111113]/90 backdrop-blur-md border-b border-brand-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+<!-- Brand Logo (Icon-only image + Text) -->
+            <a href="#" class="flex items-center space-x-3 group">
+                <div class="flex items-center justify-center w-10 h-10 rounded bg-brand-surface border border-brand-border group-hover:border-brand-orange transition-colors overflow-hidden p-1">
+                    <img src="logo.jpg" alt="Blais Mobile Welding Logo" class="w-full h-full object-contain">
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-heading text-xl sm:text-2xl font-bold tracking-wider text-white leading-tight">
+                        BLAIS <span class="text-brand-orange">MOBILE WELDING</span>
+                    </span>
+                    <span class="text-[11px] text-brand-muted tracking-widest uppercase font-mono">705-690-8520</span>
+                </div>
+            </a>
+
+            <!-- Quick Navigation -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-brand-muted">
+                <a href="#services" class="hover:text-brand-orange transition-colors">Services</a>
+                <a href="#why-us" class="hover:text-brand-orange transition-colors">Why Us</a>
+                <a href="#service-area" class="hover:text-brand-orange transition-colors">Service Area</a>
+                <a href="#contact" class="hover:text-brand-orange transition-colors">Contact</a>
+            </nav>
+
+            <!-- Primary Header CTA -->
+            <a href="tel:+17056908520" class="inline-flex items-center justify-center px-5 py-2.5 rounded font-semibold text-sm bg-brand-orange text-white hover:bg-brand-orangeHover transition-all duration-200 orange-glow shadow-lg">
+                <svg class="w-4 h-4 mr-2 fill-current" viewBox="0 0 20 20">
+                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                </svg>
+                <span>CALL NOW</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- 2. HERO SECTION -->
+    <section class="relative pt-16 pb-20 md:pt-28 md:pb-32 overflow-hidden bg-gradient-to-b from-[#111113] via-[#16171B] to-[#111113]">
+        <!-- Subtle Grid Pattern Background -->
+        <div class="absolute inset-0 opacity-5 bg-[radial-gradient(#FF6B00_1px,transparent_1px)] [background-size:16px_16px] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="max-w-3xl">
+                <!-- Badges -->
+                <div class="flex flex-wrap gap-2 sm:gap-3 mb-6">
+                    <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-brand-surface border border-brand-border text-brand-orange">
+                        <span class="w-2 h-2 rounded-full bg-brand-orange mr-2 animate-pulse"></span>
+                        Fully Certified
+                    </span>
+                    <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-brand-surface border border-brand-border text-brand-text">
+                        On-Site Service
+                    </span>
+                    <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-brand-surface border border-brand-border text-brand-text">
+                        Emergency Repairs
+                    </span>
+                </div>
+
+                <!-- Main Headline -->
+                <h1 class="text-4xl sm:text-6xl font-bold text-white leading-none tracking-tight mb-6">
+                    Fast, Reliable <br>
+                    <span class="text-brand-orange">On-Site Mobile Welding</span> Services
+                </h1>
+
+                <!-- Subheadline -->
+                <p class="text-lg sm:text-xl text-brand-muted mb-8 max-w-2xl font-normal leading-relaxed">
+                    Professional mobile welding, heavy equipment repair, and custom metal fabrication delivered straight to your job site, farm, or driveway across Kapuskasing, Timmins, and surrounding areas.
+                </p>
+
+                <!-- Dual CTAs -->
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#contact" class="inline-flex items-center justify-center px-8 py-4 rounded text-base font-bold bg-brand-orange text-white hover:bg-brand-orangeHover transition-all duration-200 orange-glow text-center">
+                        CALL FOR FREE ESTIMATE
+                    </a>
+                    <a href="#services" class="inline-flex items-center justify-center px-8 py-4 rounded text-base font-bold bg-brand-surface border border-brand-border text-white hover:border-brand-orange transition-all duration-200 text-center">
+                        VIEW SERVICES
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- QUICK HIGHLIGHT BAR -->
+    <section class="border-y border-brand-border bg-brand-surface py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div>
+                    <p class="font-heading text-2xl font-bold text-white">RAPID</p>
+                    <p class="text-xs text-brand-muted uppercase tracking-wider">Job-Site Dispatch</p>
+                </div>
+                <div>
+                    <p class="font-heading text-2xl font-bold text-brand-orange">100%</p>
+                    <p class="text-xs text-brand-muted uppercase tracking-wider">Mobile Equipment Rig</p>
+                </div>
+                <div>
+                    <p class="font-heading text-2xl font-bold text-white">HEAVY DUTY</p>
+                    <p class="text-xs text-brand-muted uppercase tracking-wider">Structural & Fabrication</p>
+                </div>
+                <div>
+                    <p class="font-heading text-2xl font-bold text-white">LOCAL</p>
+                    <p class="text-xs text-brand-muted uppercase tracking-wider">Kapuskasing & Timmins</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. SERVICES GRID -->
+    <section id="services" class="py-20 md:py-28">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl sm:text-5xl font-bold text-white mb-4">Our Core Services</h2>
+                <p class="text-brand-muted">Fully equipped mobile unit ready to solve your toughest metal breaks, structural repairs, and custom fabrication challenges.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-brand-surface border border-brand-border rounded-lg p-8 transition-all duration-300 orange-border-glow">
+                    <div class="w-12 h-12 rounded bg-brand-bg border border-brand-border flex items-center justify-center text-brand-orange mb-6">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-3">On-Site Mobile Welding</h3>
+                    <p class="text-brand-muted leading-relaxed mb-4">
+                        We bring certified welding capability directly to your site. No need to transport heavy machinery or materials—our mobile rig comes completely equipped to perform high-strength structural stick and MIG welding on demand.
+                    </p>
+                    <ul class="text-sm text-brand-text space-y-2 font-medium">
+                        <li class="flex items-center"><span class="text-brand-orange mr-2">✓</span> Stick & MIG Welding Capabilities</li>
+                        <li class="flex items-center"><span class="text-brand-orange mr-2">✓</span> On-Site Power Generator Included</li>
+                        <li class="flex items-center"><span class="text-brand-orange mr-2">✓</span> Carbon Steel, Stainless & Structural Steel</li>
+                    </ul>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-brand-surface border border-brand-border rounded-lg p-8 transition-all duration-300 orange-border-glow">
+                    <div class="w-12 h-12 rounded bg-brand-bg border border-brand-border flex items-center justify-center text-brand-orange mb-6">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-3">Heavy Equipment & Trailer Repair</h3>
+                    <p class="text-brand-muted leading-relaxed mb-4">
+                        Minimize costly job-site downtime. We repair cracked loader buckets, excavator booms, heavy trailers, farm machinery, and commercial fleet chassis with durable, reinforced welds.
+                    </p>
+                    <ul class="text-sm text-brand-text space-y-2 font-medium">
+                        <li class="flex items-center"><span class="text-brand-orange mr-2">✓</span> Loader Bucket & Lip Replacement</li>
+                        <li class="flex items-center"><span class="text-brand-orange mr-2">✓</span> Trailer Frame Reinforcements & Hitch Repair</li>
+                        <li class="flex items-center"><span class="text-brand-orange mr-2">✓</span> Agricultural & Mining Equipment Fixes</li>
+                    </ul>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-brand-surface border border-brand-border rounded-lg p-8 transition-all duration-300 orange-border-glow">
+                    <div class="w-12 h-12 rounded bg-brand-bg border border-brand-border flex items-center justify-center text-brand-orange mb-6">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 012 2v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6a2 2 0 012-2h4zm0 0R0 0 1 2-2h4a2 2 0 012 2v14a2 2 0 01-2 2h-4a2 2 0 01-2-2V4z"/></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-3">Custom Metal Fabrication</h3>
+                    <p class="text-brand-muted leading-relaxed mb-4">
+                        Precision custom steel work built to exact specifications. From heavy-duty security gates and industrial handrails to custom mounting brackets and structural supports.
+                    </p>
+                    <ul class="text-sm text-brand-text space-y-2 font-medium">
+                        <li class="flex items-center"><span class="text-brand-orange mr-2">✓</span> Custom Gates, Railings & Stairs</li>
+                        <li class="flex items-center"><span class="text-brand-orange mr-2">✓</span> Structural Brackets & Plates</li>
+                        <li class="flex items-center"><span class="text-brand-orange mr-2">✓</span> Tailored On-Site Fitting</li>
+                    </ul>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-brand-surface border border-brand-border rounded-lg p-8 transition-all duration-300 orange-border-glow">
+                    <div class="w-12 h-12 rounded bg-brand-bg border border-brand-border flex items-center justify-center text-brand-orange mb-6">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-3">Emergency Structural Repairs</h3>
+                    <p class="text-brand-muted leading-relaxed mb-4">
+                        When critical machinery breaks or structural steel fails, every hour counts. We offer rapid dispatch for urgent repair needs to get your operations running safely again.
+                    </p>
+                    <ul class="text-sm text-brand-text space-y-2 font-medium">
+                        <li class="flex items-center"><span class="text-brand-orange mr-2">✓</span> Fast On-Site Response Time</li>
+                        <li class="flex items-center"><span class="text-brand-orange mr-2">✓</span> Structural Crack Gouging & Weld Repair</li>
+                        <li class="flex items-center"><span class="text-brand-orange mr-2">✓</span> Immediate Safety Reinforcements</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. WHY CHOOSE BLAIS MOBILE WELDING -->
+    <section id="why-us" class="py-20 bg-brand-surface border-y border-brand-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl sm:text-5xl font-bold text-white mb-4">Why Choose Blais Mobile Welding</h2>
+                <p class="text-brand-muted">Built on industrial-grade craftsmanship, reliability, and modern mobile convenience.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="text-center p-6 rounded bg-brand-bg border border-brand-border">
+                    <div class="w-16 h-16 mx-auto mb-6 rounded-full bg-brand-orange/10 border border-brand-orange/30 flex items-center justify-center text-brand-orange">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">On-Time Arrival</h3>
+                    <p class="text-brand-muted text-sm leading-relaxed">
+                        We value your time and job deadlines. When we schedule a dispatch time, our mobile rig shows up promptly and ready to work.
+                    </p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="text-center p-6 rounded bg-brand-bg border border-brand-border">
+                    <div class="w-16 h-16 mx-auto mb-6 rounded-full bg-brand-orange/10 border border-brand-orange/30 flex items-center justify-center text-brand-orange">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Professional Workmanship</h3>
+                    <p class="text-brand-muted text-sm leading-relaxed">
+                        Every weld is executed with precision, clean penetration, and maximum structural integrity. High-quality standards on every job.
+                    </p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="text-center p-6 rounded bg-brand-bg border border-brand-border">
+                    <div class="w-16 h-16 mx-auto mb-6 rounded-full bg-brand-orange/10 border border-brand-orange/30 flex items-center justify-center text-brand-orange">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Complete Mobile Rig</h3>
+                    <p class="text-brand-muted text-sm leading-relaxed">
+                        Fully self-sustained unit with generator, cutting torches, grinder, and professional tooling. No job is too remote.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. SERVICE AREA & AVAILABILITY -->
+    <section id="service-area" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-brand-surface border border-brand-border rounded-xl p-8 sm:p-12 relative overflow-hidden">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <span class="text-brand-orange text-sm font-semibold tracking-wider uppercase mb-2 block">Coverage Area</span>
+                        <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">Servicing Kapuskasing, Timmins & Surrounding Regions</h2>
+                        <p class="text-brand-muted mb-6 leading-relaxed">
+                            Based out of Northern Ontario, Blais Mobile Welding provides fast on-site dispatch to industrial sites, commercial contractors, agricultural operations, and residential clients across:
+                        </p>
+                        <div class="grid grid-cols-2 gap-3 text-sm font-medium text-white mb-6">
+                            <div class="flex items-center"><span class="text-brand-orange mr-2">📍</span> Kapuskasing, ON</div>
+                            <div class="flex items-center"><span class="text-brand-orange mr-2">📍</span> Timmins, ON</div>
+                            <div class="flex items-center"><span class="text-brand-orange mr-2">📍</span> Cochrane, ON</div>
+                            <div class="flex items-center"><span class="text-brand-orange mr-2">📍</span> Smooth Rock Falls, ON</div>
+                        </div>
+                        <p class="text-xs text-brand-muted italic">
+                            *Working outside these core zones? Give us a call for special job-site dispatch requests.
+                        </p>
+                    </div>
+
+                    <!-- Callout Box -->
+                    <div class="bg-brand-bg p-8 rounded-lg border border-brand-border text-center">
+                        <h3 class="text-2xl font-bold text-white mb-2">Need Immediate Dispatch?</h3>
+                        <p class="text-brand-muted text-sm mb-6">Have an urgent structural break or equipment failure?</p>
+                        <a href="tel:+17056908520" class="inline-flex items-center justify-center w-full py-4 rounded font-bold text-lg bg-brand-orange text-white hover:bg-brand-orangeHover transition-colors orange-glow">
+                            📞 (705) 690-8520
+                        </a>
+                        <p class="text-xs text-brand-muted mt-3">Direct line to mobile welder</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. CONTACT & QUOTE SECTION -->
+    <section id="contact" class="py-20 bg-brand-surface border-t border-brand-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Contact Details -->
+                <div>
+                    <h2 class="text-3xl sm:text-5xl font-bold text-white mb-4">Request A Free Quote</h2>
+                    <p class="text-brand-muted mb-8">
+                        Fill out the quick 3-step form, or give us a direct call to describe your welding project. We'll provide a fast, straightforward estimate.
+                    </p>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 rounded bg-brand-bg border border-brand-border flex items-center justify-center text-brand-orange shrink-0">
+                                📞
+                            </div>
+                            <div>
+                                <p class="text-xs text-brand-muted uppercase font-semibold">Phone Call / Text</p>
+                                <a href="tel:+17056908520" class="text-xl font-bold text-white hover:text-brand-orange transition-colors">+1 (705) 690 8520</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 rounded bg-brand-bg border border-brand-border flex items-center justify-center text-brand-orange shrink-0">
+                                ✉️
+                            </div>
+                            <div>
+                                <p class="text-xs text-brand-muted uppercase font-semibold">Email Inquiry</p>
+                                <a href="mailto:blaismobilewelding@gmail.com" class="text-lg font-medium text-white hover:text-brand-orange transition-colors">blaismobilewelding@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 rounded bg-brand-bg border border-brand-border flex items-center justify-center text-brand-orange shrink-0">
+                                📍
+                            </div>
+                            <div>
+                                <p class="text-xs text-brand-muted uppercase font-semibold">Primary Service Hub</p>
+                                <p class="text-base text-white font-medium">Kapuskasing / Timmins, ON, Canada</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3-Field Form -->
+                <div class="bg-brand-bg p-8 rounded-xl border border-brand-border">
+                    <form onsubmit="event.preventDefault(); alert('Thank you! Your quote request has been submitted. We will contact you shortly.');">
+                        <div class="space-y-4">
+                            <!-- Field 1: Name -->
+                            <div>
+                                <label for="name" class="block text-xs font-semibold uppercase text-brand-text mb-2">Full Name *</label>
+                                <input type="text" id="name" required placeholder="John Doe" 
+                                    class="w-full px-4 py-3 rounded bg-brand-surface border border-brand-border text-white placeholder-brand-muted focus:outline-none focus:border-brand-orange transition-colors">
+                            </div>
+
+                            <!-- Field 2: Phone -->
+                            <div>
+                                <label for="phone" class="block text-xs font-semibold uppercase text-brand-text mb-2">Phone Number *</label>
+                                <input type="tel" id="phone" required placeholder="(705) 000-0000" 
+                                    class="w-full px-4 py-3 rounded bg-brand-surface border border-brand-border text-white placeholder-brand-muted focus:outline-none focus:border-brand-orange transition-colors">
+                            </div>
+
+                            <!-- Field 3: Job Description -->
+                            <div>
+                                <label for="description" class="block text-xs font-semibold uppercase text-brand-text mb-2">Description of Job *</label>
+                                <textarea id="description" rows="4" required placeholder="Describe what needs welding, location, and urgency..." 
+                                    class="w-full px-4 py-3 rounded bg-brand-surface border border-brand-border text-white placeholder-brand-muted focus:outline-none focus:border-brand-orange transition-colors"></textarea>
+                            </div>
+
+                            <!-- Submit CTA -->
+                            <button type="submit" class="w-full py-4 rounded font-bold text-base bg-brand-orange text-white hover:bg-brand-orangeHover transition-all duration-200 orange-glow">
+                                SEND ESTIMATE REQUEST
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. FOOTER -->
+    <footer class="bg-brand-bg border-t border-brand-border py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
+                <!-- Footer Brand -->
+                <div class="flex items-center space-x-3">
+                    <span class="font-heading text-xl font-bold tracking-wider text-white">
+                        BLAIS <span class="text-brand-orange">MOBILE WELDING</span>
+                    </span>
+                </div>
+
+                <!-- Footer Nav -->
+                <div class="flex flex-wrap justify-center space-x-6 text-sm text-brand-muted">
+                    <a href="#services" class="hover:text-white transition-colors">Services</a>
+                    <a href="#why-us" class="hover:text-white transition-colors">Why Us</a>
+                    <a href="#service-area" class="hover:text-white transition-colors">Service Area</a>
+                    <a href="#contact" class="hover:text-white transition-colors">Contact</a>
+                </div>
+
+                <!-- Copyright -->
+                <p class="text-xs text-brand-muted">
+                    © <script>document.write(new Date().getFullYear())</script> Blais Mobile Welding. All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
